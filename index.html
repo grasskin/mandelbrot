@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rasskin.com</title>
+
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pickr-widget/dist/pickr.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/pickr-widget/dist/pickr.min.js"></script>
+
+    <script type="text/javascript" src="./fractal.js"></script>
+
+    <style media="screen">
+      body { background: black; color: white; font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; text-align: center;}
+      #header {background: #ECEFF1; margin: 0 0 40px 0; padding: 32px;}
+      #message { background: white; color: rgba(0,0,0,0.87); max-width: 360px; margin: 0px auto 0px auto; padding: 32px 24px; border-radius: 3px; vertical-align: middle;}
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 0px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position: absolute; width: 100vw;">
+      <div id="c1" style="z-index: -1;">Loading...</div>
+    </div>
+    <div style="position: absolute; width: 100vw;">
+      <div id="c2"></div>
+    </div>
+    <button style="position: absolute; left: 20px; top: 20px;" onclick="reset();">Reset</button>
+    
+  </body>
+</html>
